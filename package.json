@@ -3,7 +3,7 @@
 	"version": "1.0.0",
 	"description": "Nexter landing page",
 	"main": "index.js",
-	"homepage": "https://diksepta.github.io/nexter-landing-page/"
+	"homepage": "https://diksepta.github.io/nexter-landing-page"
 	"scripts": {
 		"watch:sass": "node-sass sass/main.scss css/style.css -w",
 		"devserver": "live-server",
