@@ -1,0 +1,63 @@
+.story {
+	&__pictures {
+		background-color: $color-primary;
+		grid-column: full-start / span 5;
+		display: grid;
+		grid-template-rows: repeat(6, 1fr);
+		grid-template-columns: repeat(6, 1fr);
+		background-image: linear-gradient(
+				to right bottom,
+				rgba($color-primary, 0.6),
+				rgba($color-primary-dark, 0.6)
+			),
+			url(../img/back.jpg);
+		background-size: cover;
+		@media screen and (max-width: $bp-medium) {
+			padding: 2rem;
+			grid-column: 1 / -1;
+			grid-template-rows: auto;
+		}
+	}
+
+	&__img--1 {
+		width: 100%;
+		grid-column: 2 / 6;
+		grid-row: 2 / 6;
+		@media screen and (max-width: $bp-medium) {
+			grid-column: 1 / 5;
+			grid-row: 1 / 6;
+		}
+	}
+
+	&__img--2 {
+		width: 115%;
+		grid-column: 4 / 7;
+		grid-row: 4 / 6;
+		z-index: 5;
+		@media screen and (max-width: $bp-medium) {
+			width: 100%;
+			grid-column: 4 / -1;
+			grid-row: 2 / 5;
+		}
+	}
+
+	&__content {
+		background-color: $color-grey-light-1;
+		grid-column: col-start 5/ -1;
+		display: grid;
+		justify-items: start;
+		align-content: center;
+		padding: 6rem 8vw;
+		@media screen and (max-width: $bp-medium) {
+			grid-column: 1 / -1;
+			grid-row: 5 / 6;
+			padding: 3rem 8vw;
+		}
+	}
+
+	&__text {
+		font-size: 1.5rem;
+		font-style: italic;
+		margin-bottom: 4rem;
+	}
+}
